@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel='stylesheet' href='style.css'>
+    <script type="text/javascript" src="calculate.js"></script>
+
+  </head>
+   <body>
+      <form name=”calculator”>
+        <table>
+          <tr>
+            <td class = "display" colspan="4">
+              <input type="text" id="display" value="0" readonly="readonly">
+            </td>
+          </tr>
+          <tr>
+            <td><input type="button" id="1" value="1" onclick="insertNum('1')"></td>
+            <td><input type="button" id="2" value="2" onclick="insertNum('2')"></td>
+            <td><input type="button" id="3" value="3" onclick="insertNum('3')"></td>
+            <td><input type="button" id="suma" value="+" onclick="insertOp(1)"></td>
+          </tr>
+          <tr>
+            <td><input type="button" id="4" value="4" onclick="insertNum('4')"></td>
+            <td><input type="button" id="5" value="5" onclick="insertNum('5')"></td>
+            <td><input type="button" id="6" value="6" onclick="insertNum('6')"></td>
+            <td><input type="button" id="resta" value="-" onclick="insertOp(2)"></td></td>
+          </tr>
+          <tr>
+            <td><input type="button" id="7" value="7" onclick="insertNum('7')"></td>
+            <td><input type="button" id="8" value="8" onclick="insertNum('8')"></td>
+            <td><input type="button" id="9" value="9" onclick="insertNum('9')"></td>
+            <td><input type="button" id="multiplicar" class="operator" value="x" onclick="insertOp(3)"></td>
+          </tr>
+          <tr>
+             <td><input type="button" id="c" value="c" onclick="clearScreen()"></td>
+             <td><input type="button" id="0" value="0" onclick="insertNum('0')"></td>
+             <td><input type="button" id="igual" value="=" onclick="esIgual()"></td>
+             <td><input type="button" id="dividir" class="operator" value="/" onclick="insertOp(4)"></td>
+          </tr>
+        </table>
+      </form>
+
+   </body>
+</html>
